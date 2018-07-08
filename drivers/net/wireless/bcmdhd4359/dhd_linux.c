@@ -798,11 +798,10 @@ module_param(dhd_watchdog_ms, uint, 0);
 #ifdef DHD_PCIE_RUNTIMEPM
 uint dhd_runtimepm_ms = CUSTOM_DHD_RUNTIME_MS;
 #endif /* DHD_PCIE_RUNTIMEPMT */
-#if defined(DHD_DEBUG)
+
 /* Console poll interval */
 uint dhd_console_ms = 0;
 module_param(dhd_console_ms, uint, 0644);
-#endif /* defined(DHD_DEBUG) */
 
 
 uint dhd_slpauto = TRUE;

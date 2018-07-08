@@ -82,6 +82,20 @@
 		mfc0 = &mfc_0;
 	};
 
+	firmware: firmware {
+		android {
+			compatible = "android,firmware";
+			fstab {
+				compatible = "android,fstab";
+				dev = "/dev/block/platform/15570000.ufs/by-name/SYSTEM";
+				type = "ext4";
+				mnt_flags = "ro,noatime,noauto_da_alloc,discard,data=ordered,errors=panic";
+				fsmgr_flags = "wait";
+				status = "ok";
+			};
+		};
+	};
+
 	cpus {
 		#address-cells = <2>;
 		#size-cells = <0>;
