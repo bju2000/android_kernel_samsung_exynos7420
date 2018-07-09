@@ -5,7 +5,7 @@ dtb-$(CONFIG_ARCH_XGENE) += apm-mustang.dtb
 dtb-$(CONFIG_MACH_ESPRESSO7420) += exynos7420-espresso7420.dtb exynos7420-universal7420-ufs.dtb
 
 ifeq ($(CONFIG_NOBLEDEV),y)
-dtb-y += exynos7420-noblelte_usa_09.dtb
+dtb-y += exynos7420-noblelte_eur_open_09.dtb
 endif
 
 targets += dtbs
